@@ -92,7 +92,7 @@ When the user provides answers to interview questions, evaluate every answered q
    - What the candidate should add, remove, or reorder.
 5. Provide a **Strategic Framework** for answering that question. Give the framework a memorable name and define the sequence, e.g. `RSM: Risk Boundary -> Strategy Parameters -> Module Architecture`.
 6. Provide an **Ideal Logic Roadmap** with the user's score and the key logic steps a strong answer should cover. Break the roadmap into concrete points the candidate should mention.
-7. Provide a **Standard Professional Answer** written as a polished candidate response. Keep it natural and professional, not overly formal or buzzword-heavy.
+7. Provide a **Standard Professional Answer** written as a polished candidate response. Make it concrete, logical, and easy for a real candidate to say out loud. Professional means clear reasoning and specific examples, not piling up jargon.
 
 ### Scoring Guidance
 
@@ -126,6 +126,27 @@ For each answered question, include these five sections:
 5. **Standard Professional Answer**
    - Write a complete, interview-ready answer using the strategic framework and ideal roadmap.
    - Keep the voice professional, specific, and natural.
+
+### Standard Professional Answer Style
+
+The sample answer should sound like a strong but normal candidate in a real interview.
+
+- Prefer plain language over specialized terminology. Use technical terms only when they are necessary, then immediately explain what they mean in concrete terms.
+- Make every important claim observable: describe what the candidate would check, decide, build, limit, measure, or communicate.
+- Use cause-and-effect logic: "Because X risk exists, I would do Y, and I would know it works by watching Z."
+- Tie abstract ideas back to the candidate's actual experience, JD requirements, product constraints, or interviewer concern.
+- Avoid empty professionalism: do not make the answer sound stronger by listing frameworks, architecture terms, or risk-control buzzwords without explaining the action behind them.
+- Avoid overly formal phrasing that a person would not naturally say in an interview.
+- If a framework has an English name, use it as a quiet organizing aid, but the answer itself should read like a natural explanation rather than a framework lecture.
+- Include concrete boundaries when relevant, such as limits, thresholds, sequence of steps, fallback plans, stakeholder checks, or examples of tradeoffs.
+
+When revising a user's answer, convert vague statements into concrete logic. For example:
+
+- Weak: "I would strengthen risk control and monitoring."
+- Better: "I would set a maximum number of add-on orders, stop the strategy after a daily loss limit, and pause trading if the exchange API returns inconsistent order status."
+
+- Weak: "I would use a scalable architecture."
+- Better: "I would separate order placement, balance checking, and risk checks so a failed API call cannot accidentally trigger duplicate orders."
 
 ## HTML Report Requirements
 

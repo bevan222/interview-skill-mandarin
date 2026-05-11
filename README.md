@@ -41,7 +41,7 @@ skill 會逐題分析：
 - 從 Expert Perspective 分析回答好在哪裡、缺了什麼
 - 提供 Strategic Framework，告訴使用者應該用什麼結構回答
 - 提供 Ideal Logic Roadmap，拆解滿分回答應該包含的關鍵點
-- 提供 Standard Professional Answer，示範一個專業但自然的面試回答
+- 提供 Standard Professional Answer，示範一個具體、有邏輯、但不會過度文鄒鄒的面試回答
 - 輸出靜態 HTML 報告，讓使用者可以切換每一題閱讀分析
 
 ## 安裝方式
@@ -113,6 +113,27 @@ $tailor-interview-questions
   - Ideal Logic Roadmap
   - Standard Professional Answer
 - 每題都有 Logic Consistency、Conciseness、Overall Score
+
+## 專業回答的風格
+
+這個 skill 對「專業」的定義不是堆疊專有名詞，而是回答能不能讓面試官清楚看到你的判斷邏輯。
+
+好的回答應該：
+
+- 用一般人能自然說出口的語氣回答
+- 先講清楚問題本質，再講自己的處理方式
+- 把抽象概念轉成具體行動，例如要檢查什麼、限制什麼、觀察什麼指標
+- 說明因果關係，例如「因為有這個風險，所以我會做這個限制」
+- 必要時才使用專有名詞，而且要用具體例子補足
+- 避免只說「強化風控」、「提升穩定性」、「設計 scalable architecture」這種聽起來專業但不夠具體的句子
+
+例如：
+
+```text
+較弱：我會強化風控和監控機制。
+
+較好：我會先限制最大加碼次數，設定單日虧損上限，並且在交易所 API 回傳訂單狀態不一致時暫停策略，避免系統因為重複下單把虧損放大。
+```
 
 ## 評分標準
 
