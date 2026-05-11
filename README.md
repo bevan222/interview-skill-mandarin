@@ -1,6 +1,6 @@
 # Interview Skill Mandarin
 
-這個 repo 收錄一個 Codex skill：`interview-monitor`。
+這個 repo 收錄一個 Codex skill：`interview-simulation`。
 
 它適合用在中文面試準備情境，能根據使用者提供的 JD 與履歷，從面試官角度產生面試問題；也能在使用者回答題目後，針對回答進行評分、分析，並輸出可閱讀的 HTML 報告。
 
@@ -51,20 +51,20 @@ skill 會逐題分析：
 ```bash
 git clone https://github.com/bevan222/interview-skill-mandarin.git
 mkdir -p ~/.codex/skills
-cp -R interview-skill-mandarin/interview-monitor ~/.codex/skills/
+cp -R interview-skill-mandarin/interview-simulation ~/.codex/skills/
 ```
 
 安裝後，skill 路徑應該像這樣：
 
 ```text
-~/.codex/skills/interview-monitor/SKILL.md
-~/.codex/skills/interview-monitor/agents/openai.yaml
+~/.codex/skills/interview-simulation/SKILL.md
+~/.codex/skills/interview-simulation/agents/openai.yaml
 ```
 
 重新開啟或刷新 Codex 後，就可以使用：
 
 ```text
-$interview-monitor
+$interview-simulation
 ```
 
 ## 使用範例
@@ -72,7 +72,7 @@ $interview-monitor
 ### 範例 1：根據 JD 與履歷產生面試題
 
 ```text
-$interview-monitor
+$interview-simulation
 
 請根據以下 JD 與我的履歷，從面試官角度產生面試問題。
 
@@ -95,7 +95,7 @@ JD:
 ### 範例 2：分析使用者回答
 
 ```text
-$interview-monitor
+$interview-simulation
 
 請分析我以下答題：
 
@@ -162,7 +162,7 @@ $interview-monitor
 ```text
 interview-skill-mandarin/
 ├── README.md
-└── interview-monitor/
+└── interview-simulation/
     ├── SKILL.md
     └── agents/
         └── openai.yaml

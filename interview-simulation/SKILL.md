@@ -1,9 +1,9 @@
 ---
-name: interview-monitor
+name: interview-simulation
 description: Use when the user provides or references a job description, resume, CV, LinkedIn profile, portfolio, candidate background, interviewer-style interview questions, mock interview prompts, JD-resume fit questions, or numbered answers to interview questions that need scoring, critique, frameworks, ideal logic, professional sample answers, or an HTML answer-analysis report.
 ---
 
-# Interview Monitor
+# Interview Simulation
 
 ## Overview
 
