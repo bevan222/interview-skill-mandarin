@@ -1,4 +1,0 @@
-interface:
-  display_name: "Tailor Interview Questions"
-  short_description: "Generate and critique interview answers"
-  default_prompt: "Use $tailor-interview-questions to generate interviewer-style questions from this JD and resume, or critique my numbered answers in an HTML report."
